@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remuco — Enterprise Amazon Data Tracking & Pricing Analytics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Professional Navbar -->
+     <header class="main-header">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <span class="logo-icon">■</span> remuco<span class="dot">.</span>
+            </a>
+            <nav class="navigation">
+                <ul class="nav-menu">
+                    <li><a href="#features" class="menu-link">Platform</a></li>
+                    <li><a href="#pricing" class="menu-link">Pricing</a></li>
+                    <li><a href="#contact" class="menu-link">Enterprise Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <a href="#pricing" class="btn-minimal">Log In</a>
+                <a href="#pricing" class="btn-cta-nav">Deploy Free</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Premium Hero Section -->
+    <section class="hero-section">
+        <div class="hero-wrapper">
+            <div class="announcement-pill">
+                <span class="pill-badge">NEW</span> Optimized for Keepa API v2
+            </div>
+            <h1>The data infrastructure for elite Amazon sellers<span class="dot">.</span></h1>
+            <p class="hero-subtitle">Remuco delivers a hyper-optimized Python architecture that plugs directly into Keepa's live engine. Track pricing trajectories, monitor buy box metrics, and scale your analytics pipeline globally.</p>
+            <div class="hero-action-group">
+                <a href="#pricing" class="btn-primary-pro">Get Started Instantly</a>
+                <a href="#features" class="btn-secondary-pro">View System Docs</a>
+            </div>
+            
+            <!-- Live Mockup Dashboard Chart -->
+            <div class="dashboard-mockup">
+                <div class="dashboard-header">
+                    <div class="dashboard-dots"><span></span><span></span><span></span></div>
+                    <div class="dashboard-title">remuco-live-pipeline // ASIN: B08N5KWB9H</div>
+                </div>
+                <div class="dashboard-body">
+                    <div class="chart-stats">
+                        <div class="stat-box">
+                            <span class="stat-label">Current Buy Box</span>
+                            <span class="stat-value" id="live-price">€49.99</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">Sales Rank (BSR)</span>
+                            <span class="stat-value">#1,420</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-label">API Token Status</span>
+                            <span class="stat-value health">Healthy</span>
+                        </div>
+                    </div>
+                    <div class="chart-container">
+                        <!-- Visual representation of historical prices -->
+                        <div class="chart-bar-wrapper">
+                            <div class="chart-bar" style="height: 80%;"></div>
+                            <span class="chart-date">08/01</span>
+                        </div>
+                        <div class="chart-bar-wrapper">
+                            <div class="chart-bar" style="height: 75%;"></div>
+                            <span class="chart-date">08/02</span>
+                        </div>
+                        <div class="chart-bar-wrapper">
+                            <div class="chart-bar" style="height: 60%;"></div>
+                            <span class="chart-date">08/03</span>
+                        </div>
+                        <div class="chart-bar-wrapper">
+                            <div class="chart-bar" style="height: 85%;"></div>
+                            <span class="chart-date">08/04</span>
+                        </div>
+                        <div class="chart-bar-wrapper">
+                            <div class="chart-bar highlight" id="live-bar" style="height: 50%;"></div>
+                            <span class="chart-date">LIVE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Grid Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-header">
+            <span class="section-tag">ARCHITECTURE</span>
+            <h2>Engineered for scale. Built for reliability.</h2>
+            <p>Skip building pipeline infrastructure from scratch. Remuco handles the heavy lifting.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-block">
+                <div class="feature-icon">⚡</div>
+                <h3>Sub-Millisecond Pipeline</h3>
+                <p>Native asynchronous fetching pipelines query data points concurrently without clogging local network loops.</p>
+            </div>
+            <div class="feature-block">
+                <div class="feature-icon">📈</div>
+                <h3>High-Fidelity Tracking</h3>
+                <p>Access historical standard deviation models for pricing charts, BSR drops, and historic lightning deal velocities.</p>
+            </div>
+            <div class="feature-block">
+                <div class="feature-icon">🔒</div>
+                <h3>Zero-Trust Security</h3>
+                <p>Your production environment variables stay abstract. Encrypted handling protects core Keepa developer API tokens.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Pricing Tiers -->
+    <section id="pricing" class="pricing-section">
+        <div class="section-header">
+            <span class="section-tag">INVESTMENT</span>
+            <h2>Flexible plans for growing operations</h2>
+            <p>Fair pricing tiers built to align perfectly with your business infrastructure requirements.</p>
+        </div>
+        <div class="tier-matrix">
+            <div class="tier-card">
+                <div class="tier-meta">
+                    <span class="tier-name">Sandbox</span>
+                    <p class="tier-desc">For testing local integrations and sandbox setups.</p>
+                </div>
+                <div class="tier-cost">
+                    <span class="currency">$</span>19<span class="period">/mo</span>
+                </div>
+                <ul class="tier-features">
+                    <li>Single developer workstation seat</li>
+                    <li>Up to 50 active ASIN tracking pipelines</li>
+                    <li>Standard rate-limit safety bounds</li>
+                    <li>Community developer portal access</li>
+                </ul>
+                <a href="#" class="btn-tier-action">Start Free Test</a>
+            </div>
+            
+            <div class="tier-card premium-tier">
+                <div class="featured-ribbon">ENTERPRISE RECOMMENDED</div>
+                <div class="tier-meta">
+                    <span class="tier-name">Developer Pro</span>
+                    <p class="tier-desc">For production-ready scale and absolute data access.</p>
+                </div>
+                <div class="tier-cost">
+                    <span class="currency">€</span>49<span class="period">/mo</span>
+                </div>
+                <ul class="tier-features">
+                    <li>Full high-performance Keepa API tunnel</li>
+                    <li>Guaranteed 20 tokens/min pipeline throughput</li>
+                    <li>Unlimited target database lookup configurations</li>
+                    <li>Dedicated 1-on-1 architecture consultation</li>
+                </ul>
+                <a href="#" class="btn-tier-action active-tier-btn">Deploy Production Tier</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Functional Contact Panel -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <span class="section-tag">CONNECT</span>
+            <h2>Request custom architecture</h2>
+            <p>Need custom volume credits, deep historical data queries, or internal storage design help? Send our team a note below.</p>
+        </div>
+        <div class="contact-card">
+            <form id="enterprise-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="client-name">Full Name</label>
+                        <input type="text" id="client-name" required placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="client-email">Work Email</label>
+                        <input type="email" id="client-email" required placeholder="jane@company.com">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="client-message">Infrastructure Goals / Scope</label>
+                    <textarea id="client-message" rows="5" required placeholder="Tell us about your estimated daily API volume or current pipeline bottlenecks..."></textarea>
+                </div>
+                <button type="submit" class="btn-form-submit">Submit Enterprise Request</button>
+                <div id="form-success-msg" class="success-alert">✓ Thank you. Our data engineering team will follow up within 2 hours.</div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Clean FAQ Component -->
+    <section id="faq" class="faq-section">
+        <div class="section-header">
+            <span class="section-tag">FAQ</span>
+            <h2>System Details</h2>
+        </div>
+        <div class="faq-accordion">
+            <div class="faq-row">
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // 1. Fluid Smooth Scroll Architecture
+    const interactiveLinks = document.querySelectorAll('.nav-menu a, .hero-action-group a, .nav-actions a');
+    
+    interactiveLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                    const offset = 80;
+                    const bodyPosition = document.body.getBoundingClientRect().top;
+                    const sectionPosition = targetSection.getBoundingClientRect().top;
+                    const finalOffsetPosition = sectionPosition - bodyPosition - offset;
+
+                    window.scrollTo({
+                        top: finalOffsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }
+        });
+    });
+
+    // 2. High-Performance FAQ Row Triggers
+    const faqTriggers = document.querySelectorAll(".faq-trigger");
+    faqTriggers.forEach(trigger => {
+        trigger.addEventListener("click", function() {
+            this.classList.toggle("active");
+            const structuralPane = this.nextElementSibling;
+            
+            if (structuralPane.style.maxHeight) {
+                structuralPane.style.maxHeight = null;
+            } else {
+                structuralPane.style.maxHeight = structuralPane.scrollHeight + "px";
+            }
+        });
+    });
+
+    // 3. Live Dashboard Real-Time Visual Simulation
+    const livePriceEl = document.getElementById("live-price");
+    const liveBarEl = document.getElementById("live-bar");
+    
+    setInterval(() => {
+        // Randomly fluctuate price between €45.00 and €55.00 to show live calculation updates
+        const simulatedPrice = (45 + Math.random() * 10).toFixed(2);
+        livePriceEl.innerText = `€${simulatedPrice}`;
+        
+        // Match the graphical rendering height dynamically to the price fluctuation
+        const randomHeightPercent = 40 + Math.floor(Math.random() * 45);
+        liveBarEl.style.height = `${randomHeightPercent}%`;
+    }, 2500);
+
+    // 4. Functional Enterprise Contact Form Panel Logic
+    const enterpriseForm = document.getElementById("enterprise-form");
+    const successAlert = document.getElementById("form-success-msg");
+
+    enterpriseForm.addEventListener("submit", function(e) {
+        e.preventDefault(); // Stop standard page refreshing behavior
+        
+        // Hide submit button to signify ongoing background infrastructure processes
+        const submitBtn = enterpriseForm.querySelector(".btn-form-submit");
+        submitBtn.style.opacity = "0.5";
+        submitBtn.innerText = "Transmitting Details...";
+        submitBtn.disabled = true;
+
+        setTimeout(() => {
+            // Simulate processing pipeline success states
+            successAlert.style.display = "block";
+            submitBtn.innerText = "Request Received";
+            enterpriseForm.reset();
+        }, 1200);
+    });
+});
+💡
+/* Corporate & Premium System Variables */
+:root {
+    --bg-main: #fcfcfd;
+    --bg-dark-hero: #0b0f17;
+    --text-primary: #111827;
+    --text-muted: #4b5563;
+    --text-light: #9ca3af;
+    --brand-gold: #f59e0b;
+    --brand-blue: #2563eb;
+    --border-subtle: #e5e7eb;
+    --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+    --transition-smooth: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Helvetica, sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+.dot { color: var(--brand-gold); }
+
+/* Navigation Architecture */
+.main-header {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-subtle);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 16px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--text-primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-icon { color: var(--brand-gold); font-size: 16px; }
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.menu-link:hover { color: var(--text-primary); }
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btn-minimal {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-muted);
+}
+
+.btn-cta-nav {
+    text-decoration: none;
+    background: var(--text-primary);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.btn-cta-nav:hover { background: #374151; }
+
+/* Premium Dark Hero Section */
+.hero-section {
+    padding: 160px 24px 80px;
+    background: radial-gradient(circle at top right, #1e293b 0%, var(--bg-dark-hero) 60%);
+    color: white;
+    text-align: center;
+}
+
+.hero-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+.announcement-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    color: #e5e7eb;
+    margin-bottom: 28px;
+}
+
+.pill-badge {
+    background: var(--brand-gold);
+    color: var(--bg-dark-hero);
+    font-weight: 700;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.hero-section h1 {
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    line-height: 1.15;
+    margin-bottom: 24px;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #9ca3af;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.hero-action-group {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 60px;
+}
+
+.btn-primary-pro {
+    background: var(--brand-gold);
+    color: var(--bg-dark-hero);
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: var(--transition-smooth);
+}
+
+.btn-primary-pro:hover { transform: translateY(-1px); opacity: 0.95; }
+
+.btn-secondary-pro {
+    background: transparent;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 14px 28px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: var(--transition-smooth);
+}
+
+.btn-secondary-pro:hover { background: rgba(255,255,255,0.05); }
+
+/* Live Dashboard Design Mockup */
+.dashboard-mockup {
+    background: #1e293b;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    max-width: 700px;
+    margin: 40px auto 20px;
+    text-align: left;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+
+.dashboard-header {
+    background: #0f172a;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dashboard-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.dashboard-dots span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ef4444;
+}
+.dashboard-dots span:nth-child(2) { background: #eab308; }
+.dashboard-dots span:nth-child(3) { background: #22c55e; }
+
+.dashboard-title {
+    color: #94a3b8;
+    font-family: monospace;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.dashboard-body {
+    padding: 24px;
+}
+
+.chart-stats {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 30px;
+}
+
+.stat-box {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255,255,255,0.05);
+    padding: 12px 20px;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.stat-label {
+    display: block;
+    font-size: 11px;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.stat-value {
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+}
+
+.stat-value.health { color: #22c55e; }
+
+.chart-container {
+    height: 160px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.chart-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 14%;
+}
+
+.chart-bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s ease;
+}
+
+.chart-bar.highlight {
+    background: var(--brand-gold);
+}
+
+.chart-date {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 8px;
+    font-family: monospace;
+}
+
+/* Reusable Section Headers */
+.section-header {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 60px;
+}
+
+.section-tag {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--brand-blue);
+    display: block;
+    margin-bottom: 12px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+
+.section-header p {
+    color: var(--text-muted);
+    font-size: 16px;
+}
+
+/* Clean Modular Grids */
+.features-section, .pricing-section, .contact-section, .faq-section {
+    padding: 100px 24px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+.feature-block {
+    background: white;
+    padding: 40px 32px;
+    border-radius: 12px;
+    border: 1px solid var(--border-subtle);
+    box-shadow: var(--card-shadow);
+}
+
+.feature-icon {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.feature-block h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.feature-block p {
+    color: var(--text-muted);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Elite Enterprise Pricing */
+.pricing-section { border-top: 1px solid var(--border-subtle); }
+
+.tier-matrix {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.tier-card {
+    background: white;
+    border: 1px solid var(--border-subtle);
+    padding: 48px 36px;
+    border-radius: 14px;
+    width: 360px;
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+}
+
+.tier-card.premium-tier {
+    border: 2px solid var(--text-primary);
+    position: relative;
+}
+
+.featured-ribbon {
+    position: absolute;
+    top: -12px;
+    right: 24px;
+    background: var(--text-primary);
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.tier-meta { margin-bottom: 24px; }
+
+.tier-name {
+    font-size: 20px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.tier-desc {
+    font-size: 13px;
+    color: var(--text-muted);
+}
+
+.tier-cost {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 32px;
+    color: var(--text-primary);
+}
+
+.tier-cost .currency { font-size: 24px; font-weight: 500; vertical-align: super; }
+.tier-cost .period { font-size: 14px; color: var(--text-muted); font-weight: 400; }
+
+.tier-features {
+    list-style: none;
+    margin-bottom: 40px;
+    flex-grow: 1;
+}
+
+.tier-features li {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tier-features li::before {
+    content: "✓";
+    color: var(--brand-blue);
+    font-weight: bold;
+}
+
+.btn-tier-action {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    background: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border-subtle);
+    transition: var(--transition-smooth);
+}
+
+.btn-tier-action:hover { background: #f9fafb; }
+
+.active-tier-btn {
+    background: var(--text-primary);
+    color: white;
+    border: 1px solid var(--text-primary);
+}
+
+.active-tier-btn:hover { background: #374151; }
+
+/* Functional Form Section Styles */
+.contact-section {
+    border-top: 1px solid var(--border-subtle);
+    background: #f9fafb;
+}
+
+.contact-card {
+    background: white;
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: var(--card-shadow);
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    flex: 1;
+    display: flex;
